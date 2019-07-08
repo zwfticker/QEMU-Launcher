@@ -1,0 +1,67 @@
+object Form1: TForm1
+  Left = 588
+  Height = 540
+  Top = 139
+  Width = 361
+  Caption = 'Qemu-Launcher'
+  ClientHeight = 540
+  ClientWidth = 361
+  LCLVersion = '2.0.2.0'
+  object Button1: TButton
+    Left = 185
+    Height = 25
+    Top = 510
+    Width = 75
+    Caption = '启动QEMU'
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 501
+    Top = 2
+    Width = 361
+    ActivePage = TabSheet2
+    TabIndex = 1
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = '基础设置'
+    end
+    object TabSheet2: TTabSheet
+      Caption = '处理器内存设置'
+    end
+    object TabSheet3: TTabSheet
+      Caption = '存储设备设置'
+    end
+    object TabSheet4: TTabSheet
+      Caption = '网络设置'
+    end
+    object TabSheet5: TTabSheet
+      Caption = '其他设置'
+    end
+  end
+  object Button2: TButton
+    Left = 99
+    Height = 25
+    Top = 510
+    Width = 75
+    Caption = '保存'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 13
+    Height = 25
+    Top = 510
+    Width = 75
+    Caption = '打开'
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 271
+    Height = 25
+    Top = 510
+    Width = 75
+    Caption = '退出'
+    OnClick = Button4Click
+    TabOrder = 4
+  end
+end
